@@ -1,0 +1,30 @@
+body {
+  height: 100vh;
+  background: linear-gradient(to bottom, grey, white);
+  color: white;
+}
+body .conteneur {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-areas: "a a" "b b" "c c";
+}
+body .header {
+  grid-area: a;
+}
+body .main {
+  grid-area: b;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 50vh 50vh;
+  grid-template-areas: "a a" "b b";
+}
+body .main .bloca {
+  grid-area: a;
+}
+body .main .blocb {
+  grid-area: b;
+}
+body .footer {
+  grid-area: c;
+}/*# sourceMappingURL=style.css.map */
